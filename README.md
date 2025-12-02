@@ -26,7 +26,7 @@ No final do laboratório, essa é a infraestrutura:
 
 ![architecture-lab2](https://github.com/user-attachments/assets/24db1097-5054-4b07-be77-9d675040c51a)
 
-##  Etapa 1: Criar a VPC  
+##  Etapa 1: Tarefa 1: Criar um grupo de segurança para a instância de banco de dados do RDS
 
 1. Na página do Console da AWS, ir na busca e digitar VPC
 2. Na lateral da página, clicar em Suas VPCs e em seguida Criar VPC

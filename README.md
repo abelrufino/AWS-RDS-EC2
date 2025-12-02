@@ -3,24 +3,28 @@
 # AWS-RDS-EC2
 Criar um servidor de banco de dados e interagir com o banco de dados usando um aplicativo
  
-
-Este laboratório **Criar uma VPC (Virtual Private Cloud) através do Console da AWS (Amazon Web Services).**.
+Este laboratório **Este laboratório foi criado para reforçar o conceito de utilização de uma instância de banco de dados gerenciada pela AWS para atender às necessidades de banco de dados relacional.**.
 
 ---
 
 ## 🚀 Objetivo do laboratório 🚀
 
-- Criar uma Virtual Private Cloud (VPC)
-- Criar Criar sub-redes
-- Configurar um grupo de segurança
-- Executar uma instância do Amazon Elastic Compute Cloud (Amazon EC2) dentro da nova VPC
+Depois de concluir este laboratório, você será capaz de:
+
+- Executar uma instância de banco de dados do Amazon RDS com alta disponibilidade.
+- Configurar a instância de banco de dados para permitir conexões do seu servidor web.
+- Abrir um aplicativo web e interagir com seu banco de dados.
 
 ---
-<img width="838" height="384" alt="image" src="https://github.com/user-attachments/assets/42c32bed-1894-41a8-9702-0d569d616cb4" />
+Cenário
+Você começa com a seguinte infraestrutura:
+
+![architecture-lab1](https://github.com/user-attachments/assets/088ea348-a361-4cc4-9ede-44befd1cb987)
 
 ---
+No final do laboratório, essa é a infraestrutura:
 
-<img width="200" height="200" alt="vpc" src="https://github.com/user-attachments/assets/d944184c-6355-452e-aae2-8548f472483a" />
+![architecture-lab2](https://github.com/user-attachments/assets/24db1097-5054-4b07-be77-9d675040c51a)
 
 ##  Etapa 1: Criar a VPC  
 

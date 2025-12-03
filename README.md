@@ -52,6 +52,6 @@ Origem: digite sg no campo de pesquisa e selecione Web Security Group (Grupo de 
 
 Isso configura o grupo de segurança do banco de dados para permitir tráfego de entrada na porta 3306 de qualquer instância do EC2 associada ao Web Security Group (Grupo de segurança da web).
 
-Role até a parte inferior da tela e clique em ##Criar grupo de segurança.
+Role até a parte inferior da tela e clique em Criar grupo de segurança.
 
 Você usará esse grupo de segurança ao iniciar o banco de dados do Amazon RDS.

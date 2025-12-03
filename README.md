@@ -181,3 +181,49 @@ Será semelhante a: lab-db.cggq8lhnxvnv.us-west-2.rds.amazonaws.com
 Cole o valor de Endpoint em um editor de texto. Você o usará mais tarde no laboratório.
 
 --- 
+
+##  Etapa 4: Interagir com o seu banco de dados
+
+Nesta tarefa, você abrirá um aplicativo web em execução no servidor da web e o configurará para usar o banco de dados.
+
+Copie o endereço IP do WebServer selecionando a opção i Detalhes da AWS acima dessas instruções que você está lendo no momento.
+
+Abra uma nova guia do navegador da web, cole o endereço IP de WebServer e pressione Enter.
+
+O aplicativo web será exibido com informações sobre a instância do EC2.
+
+Na parte superior da página do aplicativo web, clique no link RDS.
+
+---
+<img width="887" height="434" alt="webapp" src="https://github.com/user-attachments/assets/a8569940-21e9-4933-9e04-fc01246e2f59" />
+
+
+Figura: uma imagem mostrando a interface do aplicativo web.
+
+ 
+
+Agora, você vai configurar o aplicativo para se conectar ao banco de dados.
+
+Defina as seguintes configurações:
+
+Endpoint: cole o endpoint que você copiou em um editor de texto anteriormente
+
+Banco de dados: lab
+
+Nome do usuário: main
+
+Senha: lab-password
+
+Clique em Enviar
+
+Uma mensagem será exibida explicando que o aplicativo está executando um comando para copiar informações para o banco de dados. Após alguns segundos, a aplicação exibirá um Address Book (Catálogo de endereços).
+
+O aplicativo Address Book está usando o banco de dados do RDS para armazenar informações.
+
+Teste o aplicativo web adicionando, editando e removendo contatos.
+
+Os dados estão sendo mantidos no banco de dados e são replicados automaticamente para a segunda Zona de Disponibilidade.
+
+ 
+
+

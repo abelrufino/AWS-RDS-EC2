@@ -90,6 +90,7 @@ Para a segunda Zona de Disponibilidade, selecione  10.0.3.0/24
 Clique em Criar
 
 Isso adiciona a sub-rede privada 1 (10.0.1.0/24) e a sub-rede privada 2 (10.0.3.0/24). Você usará esse grupo de sub-redes de banco de dados ao criar o banco de dados na próxima tarefa.
+
 ---
 
 ##  Etapa 3: Criar uma instância de banco de dados do Amazon RDS
@@ -178,4 +179,4 @@ Será semelhante a: lab-db.cggq8lhnxvnv.us-west-2.rds.amazonaws.com
 
 Cole o valor de Endpoint em um editor de texto. Você o usará mais tarde no laboratório.
 
- 
+--- 

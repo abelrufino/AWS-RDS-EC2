@@ -28,10 +28,30 @@ No final do laboratório, essa é a infraestrutura:
 
 ##  Etapa 1: Tarefa 1: Criar um grupo de segurança para a instância de banco de dados do RDS
 
-1. Na página do Console da AWS, ir na busca e digitar VPC
-2. Na lateral da página, clicar em Suas VPCs e em seguida Criar VPC
-3. Na página Criar VPC, selecionar Somente VPC e em seguida digitar o nome da VPC: Lab VPC
-4. Em CIDR IPv4 digitar o endereçamento IP conforme o diagrama: 10.0.0.0/16
-5. Clicar em Criar VPC
-6. Pronto, a VPC foi criada e configurada
----
+Nesta tarefa, você criará um grupo de segurança para permitir que o servidor web acesse a instância de banco de dados do RDS. O grupo de segurança será usado quando você executar a instância de banco de dados.
+
+No Console de Gerenciamento da AWS, selecione o menu  Serviços e escolha VPC em Redes e entrega de conteúdo.
+
+No painel de navegação à esquerda, clique em Grupos de segurança.
+
+Clique em Criar grupo de segurança e configure:
+
+Nome do grupo de segurança: DB Security Group
+
+Descrição: Permit access from Web Security Group
+
+VPC: Lab VPC (VPC do laboratório)
+
+Agora você adicionará uma regra ao grupo de segurança para permitir solicitações de entrada do banco de dados. No momento, o grupo de segurança não tem regras. Você adicionará uma regra para permitir acesso pelo Web Security Group (Grupo de segurança da web).
+
+Na seção Regras de entrada, clique em Adicionar regra e configure:
+
+Tipo: MySQL/Aurora (3306)
+
+Origem: digite sg no campo de pesquisa e selecione Web Security Group (Grupo de segurança da web).
+
+Isso configura o grupo de segurança do banco de dados para permitir tráfego de entrada na porta 3306 de qualquer instância do EC2 associada ao Web Security Group (Grupo de segurança da web).
+
+Role até a parte inferior da tela e clique em Criar grupo de segurança.
+
+Você usará esse grupo de segurança ao iniciar o banco de dados do Amazon RDS.

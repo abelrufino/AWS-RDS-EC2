@@ -55,3 +55,38 @@ Isso configura o grupo de segurança do banco de dados para permitir tráfego de
 Role até a parte inferior da tela e clique em Criar grupo de segurança.
 
 Você usará esse grupo de segurança ao iniciar o banco de dados do Amazon RDS.
+---
+
+##  Etapa 2: Criar um grupo de sub-redes de banco de dados
+
+Nesta tarefa, você criará um grupo de sub-redes de banco de dados que é usado para informar ao RDS quais sub-redes podem ser usadas com o banco de dados. Cada grupo de sub-redes de banco de dados requer sub-redes em pelo menos duas Zonas de Disponibilidade.
+
+No Console de Gerenciamento da AWS, selecione o menu  Serviços e escolha RDS em Banco de dados.
+
+No painel de navegação esquerdo, clique em Grupos de sub-redes.
+
+ Se o painel de navegação não estiver visível, clique no ícone de menu  no canto superior esquerdo.
+
+Clique em Criar grupo de sub-redes de banco de dados e configure:
+
+Nome: DB Subnet Group
+
+Descrição: DB Subnet Group
+
+ID da VPC: Lab VPC (VPC do laboratório)
+
+Na seção Adicionar sub-redes para Zonas de disponibilidade, clique em , depois:
+
+Selecione  a primeira Zona de Disponibilidade
+
+Selecione  a segunda Zona de Disponibilidade
+
+Para Sub-redes, clique em , depois:
+
+Para a primeira Zona de Disponibilidade, selecione  10.0.1.0/24
+
+Para a segunda Zona de Disponibilidade, selecione  10.0.3.0/24
+
+Clique em Criar
+
+Isso adiciona a sub-rede privada 1 (10.0.1.0/24) e a sub-rede privada 2 (10.0.3.0/24). Você usará esse grupo de sub-redes de banco de dados ao criar o banco de dados na próxima tarefa.

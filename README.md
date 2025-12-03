@@ -55,6 +55,7 @@ Isso configura o grupo de segurança do banco de dados para permitir tráfego de
 Role até a parte inferior da tela e clique em Criar grupo de segurança.
 
 Você usará esse grupo de segurança ao iniciar o banco de dados do Amazon RDS.
+
 ---
 
 ##  Etapa 2: Criar um grupo de sub-redes de banco de dados
